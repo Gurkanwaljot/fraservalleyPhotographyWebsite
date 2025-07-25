@@ -56,7 +56,7 @@ const cityCoordinates = [
             </ul>
         </div>
         <div className='map-display'>
-            <LoadScript googleMapsApiKey="AIzaSyBg37KmOEDBYcgNVYUHeNOLVRhpke5fuRY">
+            <LoadScript googleMapsApiKey="">
                 <GoogleMap
                 mapContainerStyle={containerStyle}
                 center={center}  // Center the map over Fraser Valley
