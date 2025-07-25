@@ -1,0 +1,78 @@
+.addons-container {
+    background-size: cover;
+    background-position: center;
+    background-color: snow;
+    text-align: center;
+    padding-bottom: 6rem;
+}
+
+.border-line-div-addons{
+    margin-left: auto;
+    margin-right: auto;
+    width: 10%;
+    margin-bottom: 2rem;
+}
+  
+.border-line-addons{
+display: flex;
+border-top: 2px solid darkgrey;
+}
+
+.services-div{
+    border-radius: 5px;
+    border: 1px solid #e1e1e1;
+    position: relative;
+    width: 90%;
+    left: 5%;
+}
+.service-info{
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #e1e1e1;
+}
+
+.add-on-service-title{
+    font-size: 1.2rem;
+    text-align: center;
+    width: 30%;
+}
+.add-on-service{
+    width: 33%;
+}
+.add-on-small-price{
+    text-align: center;
+}
+.add-on-big-price{
+    width: 30%;
+    margin-left: 2.5rem;
+}
+
+@media (max-width: 513px){
+    .add-on-service-title{
+        font-size: 0.7rem !important;
+    }
+    .add-on-service{
+        font-size: 0.5rem;
+    }
+    .add-on-big-price{
+        font-size: 0.5rem;
+    } 
+    .add-on-small-price{
+        font-size: 0.5rem;
+    }
+}
+
+@media (max-width: 683px){
+    .add-on-service-title{
+        font-size: 0.9rem ;
+    }
+    .add-on-service{
+        font-size: 0.7rem;
+    }
+    .add-on-big-price{
+        font-size: 0.7rem;
+    } 
+    .add-on-small-price{
+        font-size: 0.7rem;
+    }
+}

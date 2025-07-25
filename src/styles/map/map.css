@@ -1,0 +1,74 @@
+.map-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 6rem;
+  background-color: #f6f6f6;
+}
+
+.border-line-div-areas{
+  margin-left: auto;
+  margin-right: auto;
+  width: 15%;
+  margin-bottom: 2rem;
+}
+
+.border-line-areas{
+  display: flex;
+  border-top: 2px solid darkgrey;
+}
+
+  .h1-map-title{
+    padding-bottom: 2rem;
+  }
+  
+  .h2-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .city-list {
+    margin: 4rem !important;
+    overflow-x: auto;
+  }
+  
+  .city-list ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Display list items in a row */
+    flex-wrap: wrap; /* Prevent items from wrapping to a new line */
+    justify-content: center;
+  }
+  
+  .city-item {
+    padding: 0 8px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+    font-size: 1rem;
+  }
+  
+  .city-icon {
+    margin-right: 4px;
+    color: #ff5722; /* You can customize this color */
+  }
+  
+  .map-display {
+    width: 95%;
+  }
+
+@media (max-width: 750px) {
+  .city-list{
+    margin: 2rem 0.5rem !important;
+  }
+  
+}
+
+@media (max-width: 400px) {
+  .h1-map-title{
+    font-size: 1.7rem !important;
+  }
+  
+}
+  

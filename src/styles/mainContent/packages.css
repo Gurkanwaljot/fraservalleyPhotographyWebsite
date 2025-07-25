@@ -1,0 +1,238 @@
+.popular-packages {
+  background-image: url(https://kunversion-frontend-custom.s3.amazonaws.com/1assets/graphic/backgrounds/chevron-waves.svg);
+  background-size: contain;
+  background-position: center;
+  background-color: #fff;
+  text-align: center;
+  display: grid;
+  justify-content: center;
+  padding-bottom: 6rem;
+}
+.border-line-div-packages {
+  margin-left: auto;
+  margin-right: auto;
+  width: 15%;
+  margin-bottom: 2rem;
+}
+
+.border-line-packages {
+  display: flex;
+  border-top: 2px solid darkgrey;
+}
+
+.package-section {
+  text-align: center;
+  margin-bottom: 40px;
+  max-width: 1440px;
+}
+
+.package-section h2 {
+  margin-bottom: 20px;
+}
+
+.package-details-grid {
+  display: flex;
+  justify-content: space-evenly;
+  max-width: 1200px;
+  margin: 0 auto;
+  font-size: 16px;
+  flex-wrap: wrap;
+  align-items: stretch;
+}
+
+.package-details {
+  margin: 0.5em;
+  padding: 1.5em;
+  background: #fff;
+  width: 27%;
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-image: url(https://kunversion-frontend-custom.s3.amazonaws.com/1assets/graphic/cards/wave.png);
+  background-position: bottom;
+  background-size: cover;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column; /* Ensure content is arranged in a column */
+  justify-content: space-between; /* Distribute space between elements */
+  /* min-height: 400px; Ensure minimum height is consistent */
+}
+
+.package-details:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.icon-div {
+  width: 260px;
+  height: 70px;
+  margin-bottom: 0.1rem;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+
+.icon-div:hover {
+  transform: rotate(10deg); /* Rotate the icon slightly on hover */
+}
+.icon-border {
+  height: 84%;
+  border: 6px double;
+  border-radius: 50%;
+  width: 30%;
+}
+.icon-img {
+  width: 60%;
+  height: 100%;
+}
+.package-title {
+  color: black;
+  padding: 15px 4px;
+  margin-top: 0;
+  font-size: 18px;
+  font-weight: 900;
+  font-family: "Oswald", sans-serif !important;
+  transition: color 0.3s ease;
+}
+.package-title:hover {
+  color: #555; /* Change the color on hover */
+}
+.package-accessories {
+  font-family: "Open Sans", sans-serif !important;
+  padding-bottom: 10px;
+  padding-left: 0;
+  font-size: 14px;
+  line-height: 24px;
+  /* height: 150px; */
+  margin: 0px 0 33px;
+  text-align: left;
+  list-style-type: none;
+}
+
+.package-accessories .checkmark-item {
+  position: relative;
+  padding-left: 25px; /* Space for the checkmark */
+  margin-bottom: 10px; /* Optional: Add space between items */
+}
+
+.package-accessories .checkmark-item::before {
+  content: "✔"; /* Unicode for a checkmark */
+  position: absolute;
+  left: 0;
+  color: green; /* Set the color of the checkmark */
+  font-size: 1.2em; /* Optional: Adjust size */
+}
+
+.package-price {
+  padding: 10px 0;
+  text-align: center;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.small-price {
+  float: left;
+  width: 33.33%;
+  background-color: #bbb;
+}
+.big-price {
+  float: right;
+  width: 33.33%;
+  background-color: #ddd;
+}
+.same-price {
+  width: 33.33%;
+  background-color: #bbb;
+}
+
+.price-text {
+  margin-top: 20px;
+  margin-bottom: 0px;
+  transition: color 0.3s ease;
+}
+
+.price-text:hover {
+  color: #333; /* Change color on hover */
+}
+.area-text {
+  position: relative;
+  font-size: 10px;
+  margin-top: 0;
+  font-weight: bold;
+}
+
+.services-div {
+  border-radius: 5px;
+  border: 1px solid #e1e1e1;
+  position: relative;
+  width: 90%;
+  left: 5%;
+}
+.service-info {
+  display: flex;
+  justify-content: space-between;
+  /* padding: 15px 10px; */
+  border-bottom: 1px solid #e1e1e1;
+}
+.add-on-service-title {
+  font-size: 1.2rem;
+  text-align: center;
+  width: 30%;
+}
+.add-on-service {
+  width: 33%;
+}
+.add-on-small-price {
+  text-align: center;
+}
+.add-on-big-price {
+  width: 30%;
+  margin-left: 2.5rem;
+}
+
+@media (max-width: 550px) {
+  .package-section {
+    margin: 20px !important;
+  }
+
+  .popular-packages {
+    width: 100% !important;
+    margin-left: 0 !important;
+  }
+  .package-price {
+    padding: 0 !important;
+  }
+  .package-title {
+    padding: 20px !important;
+    font-size: 12px !important;
+    margin: 0 !important;
+  }
+  .lrn-more-btn {
+    font-size: 12px !important;
+    height: 40px !important;
+  }
+}
+@media (max-width: 1000px) {
+  .package-details {
+    width: 40% !important;
+  }
+}
+@media (max-width: 663px) {
+  .package-details {
+    width: 80% !important;
+    height: 120% !important;
+  }
+  .icon-div {
+    width: 60% !important;
+  }
+  .package-title {
+    font-size: 20px !important;
+  }
+  .package-accessories {
+    font-size: 13px;
+  }
+}

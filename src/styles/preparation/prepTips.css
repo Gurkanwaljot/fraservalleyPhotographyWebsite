@@ -1,0 +1,230 @@
+.preparation-container {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background-color: #f7f7f7;
+}
+
+.preparation-main-para {
+    margin: 2rem 12rem;
+    font-size: 2rem;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.preparation-para {
+    line-height: 1.6;
+}
+
+/* Center-align, bold, and underline the section titles with consistent font size */
+.h2-title {
+    text-align: center;
+    font-size: 2rem; /* Consistent font size */
+    font-weight: bold;
+    text-decoration: underline;
+    margin-bottom: 1.5rem;
+}
+
+.interior-preparation-div,
+.exterior-preparation-div,
+.final-points-grid {
+    margin: 2rem 12rem;
+}
+
+.prep-card {
+    padding: 20px;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 8px 6px rgba(0, 0, 0, 0.231);
+}
+
+.prep-card.in-view {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.prep-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.prep-card-para {
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 3rem 0;
+}
+
+.prep-points {
+    list-style: none; /* Removes bullet points */
+    padding: 0 3rem;
+}
+
+.prep-points li {
+    display: flex;
+    flex-direction: column; /* Ensures h3 and checkbox are stacked in mobile mode */
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+/* Styling for the label containing the checkbox and task content */
+.prep-points li label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    width: 100%; /* Ensures the label spans the entire width */
+}
+
+/* Align the checkbox content to the left */
+.checkbox-content {
+    margin-left: 10px;
+    font-weight: normal;
+    font-size: 1.3em;
+}
+
+/* Styling for the checkbox itself */
+input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+/* Final preparation section */
+.final-points-grid {
+    margin: 2rem 12rem;
+}
+
+.final-prep-card {
+    margin: 2rem 0;
+    text-align: center;
+    padding: 20px;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 8px 6px rgba(0, 0, 0, 0.231);
+}
+
+.final-prep-card.in-view {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.final-prep-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Final Tips and Final Adjustments content: same styling for checkboxes and alignment */
+.final-prep-card ul {
+    list-style: none; /* Remove bullet points */
+    padding: 0;
+}
+
+.final-prep-card ul li {
+    display: flex;
+    flex-direction: column; /* Ensures h3 and checkbox are stacked in mobile mode */
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.final-prep-card ul li label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    width: 100%; /* Ensure the label spans the full width */
+}
+
+.final-prep-card ul li .checkbox-content {
+    margin-left: 10px;
+    font-size: 1.3em;
+}
+
+/* Mobile Responsive Styles */
+@media (max-width: 1000px) {
+    .preparation-main-para,
+    .interior-preparation-div,
+    .exterior-preparation-div,
+    .final-points-grid {
+        margin: 2rem 2rem; /* Reduce margins for smaller screens */
+    }
+
+    .prep-card-para {
+        font-size: 1.3rem; /* Adjust text size */
+    }
+
+    .h2-title {
+        font-size: 1.8rem; /* Slightly smaller title font size for mobile */
+    }
+}
+
+@media (max-width: 600px) {
+    .preparation-main-para,
+    .interior-preparation-div,
+    .exterior-preparation-div,
+    .final-points-grid {
+        margin: 1rem; /* Smaller margins for mobile */
+    }
+
+    .preparation-main-para {
+        font-size: 1.2rem; /* Reduce the font size for paragraphs on mobile */
+    }
+
+    .prep-card-para {
+        font-size: 1.2rem; /* Further reduce the text size for small screens */
+    }
+
+    .prep-points,
+    .final-prep-card ul {
+        padding: 0 1rem; /* Adjust padding to make the content fit better on smaller screens */
+    }
+
+    .prep-points li,
+    .final-prep-card ul li {
+        display: flex;
+        flex-direction: column; /* Stack h3 and checkbox content in mobile mode */
+        align-items: flex-start; /* Align everything to the left */
+    }
+
+    .prep-points li h3,
+    .final-prep-card ul li h3 {
+        margin-bottom: 10px; /* Space between the title and checkbox items */
+    }
+
+    .prep-points li label,
+    .final-prep-card ul li label {
+        font-size: 1rem; /* Smaller font for checkbox labels on mobile */
+    }
+
+    .checkbox-content {
+        font-size: 1rem; /* Smaller font size for content on mobile */
+    }
+
+    .h2-title {
+        font-size: 1.6rem; /* Reduce the size of section titles further */
+    }
+}
+
+@media (max-width: 400px) {
+    .preparation-main-para {
+        font-size: 1rem; /* Further reduce paragraph font size for very small screens */
+    }
+
+    .prep-card {
+        padding: 10px; /* Reduce padding for cards on very small screens */
+    }
+
+    .prep-points li,
+    .final-prep-card ul li {
+        margin-bottom: 10px; /* Reduce spacing between items on small screens */
+    }
+
+    .prep-points li label,
+    .final-prep-card ul li label {
+        font-size: 0.9rem; /* Make label text smaller */
+    }
+
+    .h2-title {
+        font-size: 1.4rem; /* Further reduce title size for very small screens */
+    }
+
+    .checkbox-content {
+        font-size: 0.9rem; /* Smaller font size for task content */
+    }
+}

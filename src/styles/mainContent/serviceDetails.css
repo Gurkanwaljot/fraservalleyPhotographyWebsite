@@ -1,0 +1,168 @@
+/* Prefixing class names to scope to the service-details page */
+.service-details-pageTitle {
+  position: relative;
+  z-index: 1;
+  color: white;
+  height: 100vh;
+}
+
+.service-details-header-content {
+  width: 100%;
+  padding-top: 15px;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  transition: padding 0.5s ease;
+  justify-content: space-between;
+  background-color: white;
+  box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.2); /* Add shadow only at the bottom */
+}
+
+.service-details-Logo {
+  height: 5.5pc;
+  align-items: center;
+}
+
+.service-details-carousel-container {
+  position: relative;
+  z-index: -1;
+  height: 90vh;
+  overflow: hidden;
+}
+
+.service-details-carousel-container .carousel-img {
+  height: 100%;
+  width: 100%;
+  object-fit: scale-down;
+  object-position: bottom; /* Aligns the image to the bottom, ensuring it's visible */
+  margin-top: -200px;
+}
+
+.service-details-content-section {
+  position: relative;
+  background-color: white;
+  margin: 50px auto 0; /* Adjusted margin-top for smaller screens */
+}
+
+.service-details-content {
+  padding: 30px 20px;
+  background-color: white;
+  text-align: center;
+  margin-left: 12rem;
+  margin-right: 12rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* max-width: 1200px; */
+}
+
+.service-details-h2-title {
+  font-size: 2em;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.service-details-description-para {
+  font-size: 1.2em;
+  line-height: 2;
+  color: #333;
+  text-align: left;
+}
+
+footer {
+  margin-top: 50px;
+}
+
+@media (max-width: 1280px) {
+  .service-details-pageTitle {
+    height: 80vh;
+  }
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .service-details-pageTitle {
+    height: 100%;
+  }
+
+  .service-details-header-content {
+    /* padding: 10px 30px; */
+  }
+
+  .service-details-carousel-container {
+    height: 50vh;
+  }
+
+  .service-details-content {
+    padding: 40px 15px;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  .service-details-h2-title {
+    font-size: 1.8em;
+  }
+
+  .service-details-description-para {
+    font-size: 1.1em;
+  }
+}
+
+@media (max-width: 768px) {
+  .service-details-header-content {
+    display: flex;
+  }
+
+  .service-details-carousel-container {
+    height: 40vh;
+  }
+
+  .service-details-carousel-container .carousel-img {
+    height: 100%;
+    width: 100%;
+    object-fit: scale-down;
+    object-position: bottom; /* Aligns the image to the bottom, ensuring it's visible */
+    margin-top: 0px;
+  }
+
+  .service-details-content-section {
+    padding: 30px 10px;
+  }
+
+  .service-details-content {
+    margin-top: 0rem;
+    padding: 20px 10px;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  .service-details-h2-title {
+    font-size: 1.5em;
+  }
+
+  .service-details-description-para {
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 480px) {
+  .service-details-carousel-container {
+    height: 35vh;
+  }
+
+  .service-details-content-section {
+    padding: 20px 5px;
+  }
+
+  .service-details-content {
+    padding: 10px 5px;
+    margin-left: 5px; /* Minimal margins for smaller screens */
+    margin-right: 5px;
+  }
+
+  .service-details-h2-title {
+    font-size: 1.3em;
+  }
+
+  .service-details-description-para {
+    font-size: 0.9em;
+  }
+}
